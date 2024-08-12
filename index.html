@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<script>
+	function checkForm()
+	{
+		var valid = false;
+		var username = document.getElementById('username').value;
+		var password = document.getElementById('password').value;
+		if (username != "" && password != "")
+			valid = true;
+		if (username == "")
+			document.getElementById('username').style.backgroundColor = "#FFEC7B";
+		if (password == "")
+			document.getElementById('password').style.backgroundColor = "#FFEC7B";
+		return valid;			
+	}	
+	</script>
+	<title>Log In Page</title>
+	<link rel="stylesheet" type="text/css" media="all" href="/css/indexStyle.css">
+    </head>
+
+    <body>
+        <form action = "/submit-login" onSubmit = "return checkForm()" method = "POST">	
+	<h1>Welcome to MOOD CHECK-IN !</h1>
+	<table align = "center">
+	    <tr>
+                <td>Username:</td>
+                <td><input type = text name = username id = username size = 25></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type = password name = password id = password size = 25></td>
+            </tr>
+                <td colspan = 2 align = "center">
+                <br><input type = submit value = "Log In"></td>
+            </tr>
+        </table>
+        </form>
+	<br><a href="/registerPage">Register an account</a> 
+
+	<script>
+    		const urlParams = new URLSearchParams(window.location.search);
+    		const info = urlParams.get('info');
+
+    		if(info) {
+      			const errorMessage = document.getElementById("error-message");
+      			errorMessage.innerText = info;
+      			errorMessage.style.display = "block";
+    		}
+	</script>
+    </body>
+</html>    

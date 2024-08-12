@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Homepage</title>
+		<link rel="stylesheet" type="text/css" media="all" href="/css/homeStyle.css">
+	</head>
+	<body>
+
+	<div class="today"><p>Today</p></div>
+
+	<a href = "/createPost"><img src="/Photos/Moods/happy.png" class="happy"></a>
+	<a href = "/createPost"><img src="/Photos/Moods/sad.png" class="sad"></a>
+	<br>
+	<a href = "/createPost"><img src="/Photos/Moods/disgusted.png" class="disgusted"></a>
+	<a href = "/createPost"><img src="/Photos/Moods/bored.png" class="bored"></a>
+	<br>
+	<a href = "/createPost"><img src="/Photos/Moods/amazed.png" class="amazed"></a>
+	<a href = "/createPost"><img src="/Photos/Moods/tired.png" class="tired"></a>
+	<br>
+	<a href = "/createPost"><img src="/Photos/Moods/angry.png" class="angry"></a>
+	<a href = "/createPost"><img src="/Photos/Moods/hurt.png" class="hurt"></a>
+	<br><p>click on a mood to create a post!</p>
+	<div class="title"><p>Welcome to Mood Check-in</p></div>
+	<div class = "calendar">
+		<iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%237986CB&ctz=Asia 						%2FManila&showNav=1&showPrint=0&showTabs=0&showTitle=0&showTz=0" style="border:solid 1px #777" width="650" height="400" frameborder="0" 			scrolling="no"></iframe> </div>
+
+	<form action = "/submit-searchDate" class = "searchDate" method = "POST">		
+		<button type="submit"><img src="/Photos/search.png" class="search"></button>
+		<input type = text id = dateSearchInput name = "dateSearchInput" placeholder="search by date 01/01/2022" size = 25>
+	</form>
+
+	<form action = "/submit-searchMood" class = "searchMood" method = "POST">		
+		<button type="submit"><img src="/Photos/search.png" class="search"></button>
+		<input type = text id = mood name = "mood" placeholder="search by mood" size = 25>
+	</form>
+
+	<div class="audioContainer">
+		<audio src="/Music/Night Mood Instrumental.mp3" controls></audio>
+	</div>
+
+	<div class="deleteLogOut">
+		<a href="/deleteAccount">Delete Account</a>
+		<a href="/logout">Log Out</a>
+	</div>
+
+	<div class="features">
+		<br><br><a href="/viewProfile">View Profile</a>
+		<br><br><a href="/viewAll">View Summary</a>
+		<br><br><a href="/searchUser">Search a User</a>
+	</div>
+	</body>
+</html>

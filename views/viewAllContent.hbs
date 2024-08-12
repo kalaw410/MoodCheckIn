@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>View All Entries</title>
+		<link rel="stylesheet" type="text/css" media="all" href="/css/viewAllStyle.css">
+		<script>
+			function showAlert() {
+				if ({{countSad}} >= 14 || {{countHurt}} >= 14)
+					alert("Hi, we noticed that you've been feeling down for quite a few times already. We're worried about you and we urge you to consider asking for help. Have faith, we believe in you!");
+			}
+		</script>
+	</head>
+	<body onLoad = "showAlert()">
+	<div class = "calendar">
+		<iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=1&bgcolor=%237986CB&ctz=Asia 						%2FManila&showNav=1&showPrint=0&showTabs=0&showTitle=0&showTz=0" style="border:solid 1px #777" width="620" height="380" frameborder="0" 			scrolling="no"></iframe> 
+	</div>
+	<div class="monthlyIntro"></button>
+		<p>Hello, let's count how
+		<br>many times you've been 
+	</div>
+	<div class="monthlyInformation">
+		<br>Happy: {{countHappy}}
+		<br>Sad: {{countSad}}
+		<br>Disgusted: {{countDisgusted}}
+		<br>Bored: {{countBored}}
+		<br>Inspired: {{countInspired}}
+		<br>Tired: {{countTired}}
+		<br>Angry: {{countAngry}}
+		<br>Hurt: {{countHurt}}
+	</div>
+	<div class="factors">
+		<br><br>What makes you happy: 
+		{{#each factorsHappy}}
+			{{this.factors}},   
+		{{/each}}
+		<br>What makes you sad: 
+		{{#each factorsSad}}
+			{{this.factors}},   
+		{{/each}}
+		</p>
+	</div>
+	<div class="frequentMood">
+		<br>We see your most frequent mood!
+		<br>You're always {{maxMood}}
+	</div>
+
+	<div class="audioContainer">
+		<audio src="/Music/Perhaps Love Instrumental.mp3" controls></audio>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: vividly;
+  src: url("/Font/Vividly-Regular.ttf");
+}
+
+body {
+  	background-image: url("/Photos/registerBg.png");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+	font-family:vividly;
+}
+
+h1 {
+	margin:140px 0 0 240px;
+	color: #FF6248;
+	font-size: 250%;
+}
+
+table {
+ 	margin:10px 0 0 190px;
+	color: #24901B;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+td {
+	padding: 7px;
+}
+
+p {
+	margin:0 0 0 115px;
+	color: #FF6248;
+	font-size: 120%;
+}
+
+input[type="submit"] {
+	border: 0px;
+	outline: none;
+	padding: 10px;
+	color: #FFF9D9;
+	background-color: #FF6248;
+	font-family: vividly;
+	font-size: 100%;
+}

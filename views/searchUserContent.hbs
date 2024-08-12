@@ -1,0 +1,29 @@
+<html>
+
+	<head>
+		<title>Search User </title>
+		<link rel="stylesheet" type="text/css" media="all" href="/css/searchUserStyle.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		
+	</head>
+	<body>
+		<p id="searchUserText">Search a User</p>
+
+		<form class="example" action = "/submit-searchUser" method = "POST">
+  		<input type="text" placeholder="input username here" name="search" class="search" id="search">
+		<button type="submit" id="searchButton"><img src="Photos/search.png" id="searchImg"></button>
+		</form>
+            {{#each user}}
+                <div class = username>Username: {{this.username}}</div>
+				<div class = info>
+					<br>Name: {{this.firstname}} {{this.lastname}}
+					<br>Color: {{this.color}}
+            {{/each}}
+				<br>What makes this user happy: 
+				{{#each factorsHappy}}
+					{{this.factors}},   
+				{{/each}}
+			</div>
+	</body>
+</html>

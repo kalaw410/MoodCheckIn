@@ -1,0 +1,14 @@
+@font-face {
+  font-family: vividly;
+  src: url("/Font/Vividly-Regular.ttf");
+}
+
+body {
+	background-image: url("/Photos/searchByDateBg.png");
+	background-repeat: no-repeat;
+  	background-size: cover;
+	font-family: vividly;
+	color: #FFF5DE;
+	font-size: 200%;
+	margin: 0 0 0 40px;
+}

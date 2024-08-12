@@ -1,0 +1,69 @@
+@font-face {
+  font-family: vividly;
+  src: url("/Font/Vividly-Regular.ttf");
+}
+
+body {
+	background-image: url("/Photos/homepageBg.png");
+	background-repeat: no-repeat;
+  	background-size: cover;
+	font-family: vividly;
+}
+
+button {
+	border: 0px;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+.left {
+	margin: 10px 0 0 40px;
+	
+}
+
+.right {
+	margin: 10px 0 0 510px;
+}
+
+.monthlyIntro {
+	font-size: 200%;
+	margin: -420px 0 0 710px;
+	color: #3B9B19;
+	text-align:center;
+}
+
+.monthlyInformation {
+	font-size: 140%;
+	margin: -30px 0 0 700px;
+	color: #096004;
+	line-height: 1.1;
+	text-align: center;
+}
+
+.factors {
+	font-size: 140%;
+	margin: -30px 0 0 800px;
+	color: #3B9B19;
+	line-height: 1.1;
+}
+
+.frequentMood {
+	font-size: 220%;
+	margin: 20px 0 0 100px;
+	color: #9759DD;
+	line-height: 0.5;
+}
+
+.audioContainer {
+	margin: -50px 0 0 850px;
+	width: 400px;
+}
+
+.audioContainer audio::-webkit-media-controls-panel {
+	background-color: #FF4F75;
+}
+
+.calendar {
+	margin: 70px 0px 0px 90px;
+}

@@ -1,0 +1,94 @@
+@font-face {
+  font-family: vividly;
+  src: url("/Font/Vividly-Regular.ttf");
+}
+
+body {
+	background-image: url("/Photos/createPostBg.png");
+	background-repeat: no-repeat;
+  	background-size: cover;
+	font-family: vividly;
+}
+
+.yourMoodHere {
+	margin: 0 0 0 60px;
+	font-size: 400%;
+	text-align: left;
+	color: #FFEFAB;
+}
+
+#mood {
+	margin: 0px 0 0 70px;
+	background-color: #FFEFAB;
+	border: 0px;
+	outline: none;
+	padding: 30px;
+}
+
+.date {
+	margin: 20px 0px 0 1000px;
+	color: #FFF5DE;
+	font-size: 300%;
+}
+
+#date {
+	margin: -30px 0px 0 1100px;
+}
+
+#factors {
+	background-color : #FFC3D0;
+	border: 0px;
+	outline: none;
+	margin: -100px 0 0 300px;
+	padding: 50px;
+	color: #FFF5DE;
+}
+
+#factors::placeholder {
+	color: white;
+	opacity: 0.7;
+}
+
+#description {
+	background-color : #FEF9DD;
+	border: 0px;
+	outline: none;
+	margin: 10px 0 0 300px;
+	padding: 120px;
+	color: #FF5277;
+}
+
+#description::placeholder {
+	color: #FF5277;
+	opacity: 0.7;
+}
+
+form p {
+	color: #FEF9DD;
+	font-size: 250%;
+	margin: 0px 0 0 0px;
+}
+
+#dailyPicture {
+	margin: 0px 0 0 0px;
+	color: #FEF9DD;
+}
+
+#pen {
+	width: 300px;
+	height: 150px;
+}
+
+Button {
+	margin: -60px 0 0 1050px;
+	border: 0px;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+#penText {
+	color: #B9FFD7;
+	font-size: 200%;
+	margin: -100px 0 0 300px;
+}

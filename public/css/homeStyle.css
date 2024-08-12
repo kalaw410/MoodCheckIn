@@ -1,0 +1,131 @@
+@font-face {
+  font-family: vividly;
+  src: url("/Font/Vividly-Regular.ttf");
+}
+
+body {
+	background-image: url("/Photos/homepageBg.png");
+	background-repeat: no-repeat;
+  	background-size: cover;
+	font-family: vividly;
+}
+
+p {
+	margin: 10px 0 0 40px;
+	font-size: 110%;
+	color: #096004;
+}
+
+.today p{
+	color: #FF6248;
+	margin: 100px 0 0 65px;
+	font-size: 480%;
+}
+
+.happy {
+	margin: 0 0 0 40px;
+	width:8%;
+	height:8%;
+}
+
+.sad {
+	margin: 0 0 0 0;
+	width:8%;
+	height:8%;
+}
+
+.disgusted, .amazed, .angry {
+	margin: -20px 0 0 40px;
+	width:8%;
+	height:8%;
+}
+
+.bored, .tired, .hurt {
+	margin: -20px 0 0 0;
+	width:8%;
+	height:8%;
+}
+
+.searchDate {
+	margin: 110px 0 0 280px;
+}
+
+.searchMood {
+	margin: -45px 0 0 620px;
+}
+
+.search {
+	margin: 0 0 -20px 0;
+	width: 100px;
+	height: 50px;
+	
+}
+
+button {
+	border: 0px;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+input[type="text"] {
+	background-color : #007DD1;
+	border: 0px;
+	outline: none;
+	margin: 0 0 0 -20px;
+	padding: 10px;
+	color: white;
+}
+
+::placeholder {
+	color: white;
+	opacity: 0.5;
+}
+
+.audioContainer {
+	display: flex;
+	margin: 10px 0 0 470px;
+	width: 400px;
+}
+
+.audioContainer audio::-webkit-media-controls-panel {
+	background-color: #CDC0B8;
+}
+
+.deleteLogOut a {
+	font-family: verdana;
+	text-decoration: none;
+	color: black;
+	font-size: 80%;
+}
+
+.deleteLogOut a:before {
+	content: "\00a0 ";
+}
+
+.deleteLogOut {
+	margin: -600px 20px 0 0;
+	text-align: right;
+}
+
+.features {
+	margin: 230px 40px -20px 0;
+	text-align: right;
+	font-size: 100%;
+}
+
+.features a {
+	text-decoration: none;
+	color: #FF4F75;
+	font-family: verdana;
+}
+
+.calendar {
+	margin: 20px 0px -100px 300px;
+}
+
+.title p {
+	color: #096004;
+	font-size: 400%;
+	margin: -500px 0 0 320px;
+}

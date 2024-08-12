@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>View Posts By Date</title>
+		<link rel="stylesheet" type="text/css" media="all" href="/css/searchByDateStyle.css">
+	</head>
+	<body>
+        {{#each entry}}
+                <br><br>Date: {{this.date}}
+                <br><br>Mood: {{this.mood}}
+                <br><br>Contributing Factors: {{this.factors}}
+                <br><br>Description: {{this.description}}
+                <br><br><br>
+            {{/each}}
+    </body>
+</html>

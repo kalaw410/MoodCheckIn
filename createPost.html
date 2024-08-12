@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Create a Post</title>
+		<link rel="stylesheet" type="text/css" media="all" href="/css/createPostStyle.css">
+		<script>
+		function checkForm() {
+			var valid = false;
+			var mood = document.getElementById('mood').value;
+			var username = document.getElementById('username').value;
+			var date = document.getElementById('date').value;
+			if (username != "" && mood != "" && date != "")
+				valid = true;
+			if (username == "")
+				document.getElementById('username').style.backgroundColor = "#B9FFD7";
+
+			if (mood == "")
+				document.getElementById('mood').style.backgroundColor = "#B9FFD7";
+
+			if (date == "")
+				document.getElementById('date').style.backgroundColor = "#B9FFD7";
+	
+			return valid;
+		}
+		</script>
+	</head>
+	<body>
+
+	<form action = "/submit-createPost" onSubmit = "return checkForm()" method = "POST">
+		<div class="username">Username: </div>
+		<input type = text name = 'username' id = username size = 10>
+
+		<div class="date">Date: </div>
+		<input type = text name = 'date' id = date placeholder = "01/01/2022" size = 10>
+		
+		<div class="yourMoodHere">You are</div> 
+		<input type = text name = 'mood' id = mood placeholder = "happy, sad..." size = 10>
+		<br>
+		<input type = text name = 'factors' id = factors placeholder = "list the contributing factors for this mood, separated by a comma" size = 120>
+		<input type = text name = 'description' id = description placeholder = "describe your day here" size = 99>
+		<button type="submit"><img src="/Photos/pen.png" id="pen"></button>
+	</form>
+	<p id = "penText">Click on the pen to submit your entry!</p>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Edit Profile</title>
+		<link rel="stylesheet" type="text/css" media="all" href="/css/editProfileStyle.css">
+        <script>
+	    function checkForm(){
+		    var valid = false;
+		    var username= document.getElementById("username").value;
+		    var firstname= document.getElementById("firstname").value;
+		    var lastname= document.getElementById("lastname").value;
+
+		    if(username != "" && firstname != "" && lastname != ""){
+		        alert("You have successfully edited your profile! Please log in again");
+		        valid = true;
+		    }
+		
+		    if(username.length == 0){
+		        document.getElementById("username").style.backgroundColor="#FFD0A6";
+		    }
+		
+		    if(firstname.length == 0){
+		        document.getElementById("firstname").style.backgroundColor="#FFD0A6";
+		    }
+
+		    if(lastname.length == 0){
+		        document.getElementById("lastname").style.backgroundColor="#FFD0A6";
+		    }
+
+            return valid
+        }
+        </script>
+	</head>
+	<body>
+	<div class="rectangle"></div>
+	<div class="userInformation">
+        <div class = "hello">Hello!<br><br></div>
+        <form action = "/submit-editProfile" onSubmit = "return checkForm()" method = "POST">
+		    Username:  <input type = text name = "username" id = "username" size = 20>
+		    <br><br>First Name: <input type = text name = "firstname" id = "firstname" size = 20>
+		    <br><br>Last Name:  <input type = text name = "lastname" id = "lastname" size = 20>
+		    <br><br>Favorite Color: <input type = color name = "color" id = "color" size = 20>
+            <br><br><input type = submit value = "Apply Changes">
+        </form>
+	</div>
+	</body>
+</html>

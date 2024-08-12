@@ -1,0 +1,51 @@
+@font-face {
+  font-family: vividly;
+  src: url("/Font/Vividly-Regular.ttf");
+}
+
+body {
+	background-image: url("/Photos/indexBg.png");
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	align: center;
+	font-family:vividly;
+	text-align: center;
+}
+
+h1 {
+	font-size: 340%;
+	margin: 45px 0 20px 0;
+	color: white;
+}
+
+table {
+	color: #005B99;
+	font-weight: bold; 
+	font-size: 120%;
+}
+
+a:link {
+	font-size: 150%;
+	color: #B9FFD7; 
+	text-decoration: none; 
+	border-bottom: 3px dotted #FFEB82;
+}
+
+a:visited {
+	color: #FFEB82;
+}
+
+a:hover {
+	border-bottom-style: solid;
+}
+
+input[type="submit"] {
+	border: 0px;
+	outline: none;
+	padding: 10px;
+	color: #004C80;
+	background-color: #CFEEFF;
+	font-weight: bold;
+	font-family: vividly;
+	font-size: 100%;
+}

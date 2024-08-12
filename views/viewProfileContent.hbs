@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>View Profile</title>
+		<link rel="stylesheet" type="text/css" media="all" href="/css/viewProfileStyle.css">
+	</head>
+	<body>
+	<div class="rectangle"></div>
+	<div class="userInformation">
+        <div class = "hello">Hello!</div>
+        {{#each user}}
+		    <p>Username: {{this.username}}
+		    <br><br>First Name: {{this.firstname}}
+		    <br><br>Last Name: {{this.lastname}}
+		    <br><br>Favorite Color: {{this.color}}
+		    </p>
+        {{/each}}
+		<a href="/editProfile">Edit Profile</a>
+	</div>
+	</body>
+</html>

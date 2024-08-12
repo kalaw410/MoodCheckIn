@@ -1,0 +1,90 @@
+<html>
+	<head>	
+		<title>Register Page </title>
+		<link rel="stylesheet" type="text/css" media="all" href="/css/registerStyle.css">
+		   <script>
+	function checkForm()
+	{
+		var valid = false;
+		var username= document.getElementById("username").value;
+		var firstname= document.getElementById("firstname").value;
+		var lastname= document.getElementById("lastname").value;
+		var password= document.getElementById("password1").value;
+		var cpassword= document.getElementById("password2").value;
+
+		if(username != "" && firstname != "" && lastname != "" && password != "" && cpassword != "" && password == cpassword){
+		alert("Hello, " + document.getElementById("firstname").value + "! You have successfully registered your account.");
+		valid=true;
+		}
+		
+		if(username.length == 0){
+		document.getElementById("username").style.backgroundColor="#C2F3BE";
+		}
+		
+		if(firstname.length == 0){
+		document.getElementById("firstname").style.backgroundColor="#C2F3BE";
+		}
+
+		if(lastname.length == 0){
+		document.getElementById("lastname").style.backgroundColor="#C2F3BE";
+		}
+
+
+		if(password.length == 0){
+		document.getElementById("password1").style.backgroundColor="#C2F3BE";
+		}
+
+		if(cpassword.length == 0){
+		document.getElementById("password2").style.backgroundColor="#C2F3BE";
+		}
+
+		if(password != cpassword){
+		document.getElementById("password1").style.backgroundColor="#C2F3BE";
+		document.getElementById("password2").style.backgroundColor="#C2F3BE";
+		alert("Password and Confirm Password are DIFFERENT!");
+		valid=false;
+		}
+		
+		
+		return valid;			
+	}	
+	</script>
+	</head>
+	<body>
+	<h1>Create an Account</h1>
+	<form action = "/submit-registerPage" onSubmit = "return checkForm()" method = "POST">
+        <table>
+		<tr>
+                	<td>Username *:</td>
+                	<td><input type = text name = "username" id = "username" size = 25></td>
+            	</tr>
+             	<tr>
+                	<td>First name *:</td>
+                	<td><input type = text name = "firstname" id = "firstname" size = 25></td>
+            	</tr>
+             	<tr>s
+                	<td>Last Name *:</td>
+                	<td><input type = text name = "lastname" id = "lastname" size = 25></td>
+            	</tr>
+            	<tr>
+                	<td>Favorite Color:</td>
+                	<td><input type = color name = "color" id = "color" size = 25></td>
+            	</tr>
+            	<tr>
+                	<td>Password *:</td>
+                	<td><input type = password name = "password1" id = "password1" size = 25></td>
+            	</tr>
+            	<tr>
+                	<td>Confirm Password *:</td>
+                	<td><input type = password name = "password2" id = "password2" size = 25></td>
+            	</tr>
+          	<tr>
+                	<td>
+                	<input type = submit value = "Register"></td>
+            	</tr>
+        </table>
+        </form>
+	<p>By clicking Register, you agree to our Terms, Data Policy and Cookies Policy.
+	<br>You may receive SMS Notifications from us and can opt out any time.</p>
+	</body>
+</html>
